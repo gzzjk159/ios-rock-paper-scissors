@@ -1,7 +1,6 @@
-# 👊묵찌빠 게임 프로젝트
+# 👊 묵찌빠 게임 프로젝트
 
-
-## 목차
+## 📚 목차
 - [소개](#소개)
 - [프로젝트 수행 중 핵심 경험](#프로젝트-수행-중-핵심-경험)
 - [타임라인](#타임라인)
@@ -12,7 +11,7 @@
 - [트러블 슈팅](#트러블-슈팅)
 - [7팀 회고](#7팀-회고)
 
-## 🗣소개
+## 🗣 소개
 ### 프로젝트 소개
 #### 프로젝트 기간 : 22.12.26 ~ 22.12.30
 - 가위바위보를 승자가 날 때까지 반복한다.(0 누르면 종료)
@@ -29,7 +28,7 @@
 |Navigator, Driver|Navigator, Driver|
 
 
-## 📍프로젝트 수행 중 핵심 경험
+## 📍 프로젝트 수행 중 핵심 경험
 <details>
     <summary><big>핵심 경험</big></summary>
 - Swift의 Optional 안전하게 처리하기<br>
@@ -43,8 +42,7 @@
 - 동료와 협업자세 고민하기<br>
 </details>
 
-
-## ⏱타임라인
+## ⏱ 타임라인
 #### STEP 1 [2022.12.26~2022.12.27]
 - **2022.12.26**
     - 숫자 입력 함수 구현, 컴퓨터 숫자 반환 함수 구현
@@ -68,7 +66,7 @@
     - runGame함수 구현
     - 묵찌빠 결과 출력함수 구현
 
-## 📂파일구조
+## 📂 파일구조
 ```bash!
 RockPaperScissors
 ├── Error.swift
@@ -83,7 +81,7 @@ RockPaperScissors
 └── main.swift
 ```
 
-## 순서도
+## 📊 순서도
 
 <details>
 <summary><big>STEP 1 순서도</big></summary>
@@ -95,7 +93,7 @@ RockPaperScissors
 <img src="https://cdn.discordapp.com/attachments/1056776760622071858/1058266474327855145/MookZziBbaGame.drawio.png"/>
 </details>
 
-## 💻실행화면
+## 💻 실행화면
 |**게임 실행**|
 |---|
 |![컴퓨터승리](https://user-images.githubusercontent.com/88870642/210028600-7db422a6-2f80-4ed3-9d25-7515aec3a589.gif)|
@@ -106,8 +104,7 @@ RockPaperScissors
 |**묵찌빠 입력오류 시 턴 넘김**|
 |![묵찌빠잘못입력](https://user-images.githubusercontent.com/88870642/210028821-3f210ce5-8b6c-489c-8c95-b5847a732072.gif)|
 
-
-## 👥팀 규칙
+## 👥 팀 규칙
 ### 코드 컨벤션
 - 함수 선언 시 100자 이상으로 넘어갈 경우 매개변수 줄바꾸기
 - 함수, 변수, 상수 이름은 CamelCase 사용하기
@@ -122,7 +119,7 @@ RockPaperScissors
 - chore : 기타 변경사항 (코드의 변화가 생산적인 것이 아닌 것 수정)
 
 
-## 🔥트러블 슈팅
+## 🔥 트러블 슈팅
 ### 1️⃣ Naming
 프로젝트를 진행함에 있어 Naming이 정말 까다로웠습니다. 그 중 가장 큰 이유는 사용자 타입을 사용하지 않아서 그랬던거 같습니다. 예를 들어 class 타입으로 "RockPaperScissors"로 설정을 해주었다면, 여러 기능을 하는 함수의 함수명에서 "RockPaperScissors"를 작성하지 않아도 될 것입니다.
 
@@ -141,16 +138,15 @@ class RockPaperScissors {
 **- class 미사용**
 ```swift=
 func decideRockPaperScissorsGameWinner() {
-    
 }
 
 func printRockPaperScissorsGameWinner() {
-    
 }
 ```
 클래스 타입의 용도와 기능은 다양하지만, 클래스와 관련된 함수를 묶어줌으로써 함수의 Naming을 단축시킬 수 있다고 생각됩니다.
 
 ------
+
 ### 2️⃣ 가위바위보 로직 구현
 가위바위보 로직 구현에 있어서 사용자의 숫자와 컴퓨터의 숫자를 빼서 승패를 결정짓는 로직을 생각했습니다. 하지만 나중에 가위바위보를 결정 짓는 숫자들이 변경된다면 프로그램에서 전체적인 리팩토링이 필요할 것입니다. 이러한 이유로 숫자가 아닌 가위,바위,보로 승패를 확인할 수 있는 로직을 구현했습니다. 이 과정 중 enum을 통해 제한적인 조건으로 가위, 바위, 보를 선언해주었습니다.
 
@@ -167,7 +163,6 @@ func compareHand(computerHand: Int, userHand: Int) -> String {
     } else {
         status = "Lose"
     }
-
     return status
 }
 ```
@@ -251,7 +246,6 @@ print(Winner.rawValue) //변경 전
 print(Winner.name) //변경 후
 ```
 
-
 ---
 
 ### 6️⃣ 함수의 재사용성 
@@ -286,3 +280,4 @@ func inputUserNumber() throws -> Int {
 
 ## 7팀 회고
 * [7팀 회고](https://github.com/gzzjk159/ios-rock-paper-scissors/blob/step2/7%ED%8C%80%20%ED%9A%8C%EA%B3%A0.md)
+
