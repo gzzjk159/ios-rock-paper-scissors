@@ -10,6 +10,7 @@
 - [팀 규칙](#팀-규칙)
 - [트러블 슈팅](#트러블-슈팅)
 - [7팀 회고](#7팀-회고)
+- [참고 링크](#참고-링크)
 
 ## 🗣 소개
 ### 프로젝트 소개
@@ -278,6 +279,14 @@ func inputUserNumber() throws -> Int {
 }
 ```
 
+## 참고 링크
+* [draw.io](https://app.diagrams.net/)
+* [Swift API Design Guideline](https://www.swift.org/documentation/api-design-guidelines/)
+* [Swift Properties](https://jusung.gitbook.io/the-swift-language-guide/language-guide/10-properties)
+* [Swift Enum](https://jusung.gitbook.io/the-swift-language-guide/language-guide/08-enumerations)
+* [Swift Generics](https://docs.swift.org/swift-book/LanguageGuide/Generics.html#)
+* [Switch control Flow](https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#)
+* [The Swift Language Guide](https://jusung.gitbook.io/the-swift-language-guide/)
+
 ## 7팀 회고
 * [7팀 회고](https://github.com/gzzjk159/ios-rock-paper-scissors/blob/step2/7%ED%8C%80%20%ED%9A%8C%EA%B3%A0.md)
-
